@@ -1,16 +1,15 @@
 @media (max-width: 1128px) {
   .request__title {
-    font-size: 34px;
+    font-size: 26px;
   }
 
   .request__subtitle {
     font-size: 17px;
   }
 
-  .request__info::before {
-    transform: scale(1);
-    right: 15px;
-    top: -100px;
+  .request__info {
+    width: 383px;
+    height: 260px;
   }
 }
 
@@ -34,11 +33,6 @@
 
   .request__info {
     order: -1;
-    margin-bottom: 90px;
-  }
-
-  .request__info::before {
-    top: -88px;
   }
 
   .footer__main {
@@ -67,7 +61,6 @@
   }
 
   .request__title {
-    font-size: 30px;
     text-align: right;
   }
 
@@ -100,6 +93,12 @@
     width: 260px;
   }
 
+  .request__info {
+    width: 320px;
+    height: 200px;
+    position: relative;
+  }
+
   .request__input-name {
     font-size: 19px;
   }
@@ -107,12 +106,6 @@
   .request__title {
     font-size: 22px;
     text-align: right;
-  }
-
-  .request__info::before {
-    transform: scale(0.8);
-    top: -94px;
-    right: -44px;
   }
 
   .footer__categories {
