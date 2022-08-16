@@ -65,6 +65,9 @@ input:focus {
   &--green {
     background-color: #528b3d;
   }
+  &--blue {
+    background-color: #7dd7ed;
+  }
 }
 
 .title {
@@ -76,6 +79,9 @@ input:focus {
   }
   &--green {
     color: #528b3d;
+  }
+  &--blue {
+    color: #7dd7ed;
   }
 }
 

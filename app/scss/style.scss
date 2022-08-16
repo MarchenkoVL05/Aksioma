@@ -268,6 +268,7 @@
 
   &-text {
     margin-top: 30px;
+    max-width: 500px;
   }
 
   &-btn {
@@ -500,5 +501,54 @@
   list-style-type: disc;
 }
 
-@import "./media/mainAndAboutMedia";
-@import "./media/outsource.scss";
+// Битрикс 24: о направлении
+.aboutBitrix {
+  &__hero {
+    padding: 0 15px;
+  }
+
+  &__title {
+    margin-top: 60px;
+    color: #7dd7ed;
+    text-align: center;
+  }
+
+  &__img {
+    margin-top: 40px;
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  &__descr {
+    margin-top: 55px;
+  }
+
+  &__result {
+    margin: 100px auto 0;
+  }
+
+  &__result-title {
+    width: 366px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 44px;
+    text-align: center;
+    color: #373737;
+    background-color: rgba(125, 215, 237, 0.31);
+    border-radius: 10px;
+  }
+
+  &__result-descr {
+    max-width: 1283px;
+    margin: 32px 0 105px 0;
+  }
+}
+
+@import "./media/mainAndAbout1Cmedia";
+@import "./media/outsourceMedia";
+@import "./media/aboutBitrixMedia";

@@ -1,0 +1,33 @@
+@media (max-width: 1128px) {
+  .aboutBitrix__title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutBitrix__result-title {
+    font-size: 30px;
+    width: 280px;
+  }
+
+  .aboutBitrix__img {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutBitrix__title {
+    font-size: 23px;
+  }
+
+  .aboutBitrix__descr {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .aboutBitrix__result-title {
+    width: 190px;
+    font-size: 22px;
+  }
+}
