@@ -1,3 +1,18 @@
+//Main and About Page
+@media (max-width: 1260px) {
+  .about-products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .products__item-descr {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 1128px) {
   .request__title {
     font-size: 26px;
@@ -10,6 +25,28 @@
   .request__info {
     width: 383px;
     height: 260px;
+  }
+
+  .about-products__title {
+    font-size: 36px;
+  }
+
+  .about__hero {
+    &-title {
+      font-size: 36px;
+    }
+
+    &-info {
+      width: 450px;
+    }
+
+    &-img {
+      width: 440px;
+    }
+  }
+
+  .reasons__img {
+    max-height: 303px;
   }
 }
 
@@ -33,6 +70,57 @@
 
   .request__info {
     order: -1;
+  }
+
+  .about__hero {
+    padding: 10px 15px 80px 15px;
+    &-inner {
+      flex-direction: column-reverse;
+    }
+
+    &-title {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    &-text {
+      text-align: center;
+    }
+
+    &-btn {
+      margin: 40px auto 0;
+    }
+  }
+
+  .about-products__subtitle {
+    font-size: 20px;
+  }
+
+  .reasons {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__title {
+      font-size: 36px;
+      text-align: center;
+    }
+
+    &__subtitle {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    &__text {
+      margin: 10px auto 0;
+      font-size: 14px;
+      text-align: center;
+      max-width: 420px;
+    }
+
+    &__tagline {
+      font-size: 18px;
+    }
   }
 
   .footer__main {
@@ -62,6 +150,37 @@
 
   .request__title {
     text-align: right;
+  }
+
+  .about__hero {
+    &-img {
+      width: 320px;
+    }
+    &-title {
+      font-size: 26px;
+    }
+    &-info {
+      width: 295px;
+      margin-right: 0;
+    }
+    &-text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .about-products__title {
+    font-size: 26px;
+  }
+
+  .about-products__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .reasons__tagline {
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .footer__main {
@@ -97,6 +216,7 @@
     width: 320px;
     height: 200px;
     position: relative;
+    right: 10px;
   }
 
   .request__input-name {

@@ -1,16 +1,11 @@
-html{
+html {
   box-sizing: border-box;
 }
 
 *,
 *::after,
-*::before{
+*::before {
   box-sizing: inherit;
-}
-
-ul[class],
-ol[class] {
-  padding: 0;
 }
 
 body,
@@ -48,6 +43,6 @@ select {
   font: inherit;
 }
 
-a{
+a {
   text-decoration: none;
 }
