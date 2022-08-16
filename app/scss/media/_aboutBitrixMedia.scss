@@ -23,6 +23,11 @@
   .aboutBitrix__descr {
     margin-top: 30px;
   }
+
+  .aboutBitrix__descr,
+  .aboutBitrix__result-descr {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 420px) {
