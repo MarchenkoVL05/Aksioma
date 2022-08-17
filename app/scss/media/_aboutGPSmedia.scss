@@ -1,0 +1,97 @@
+@media (max-width: 1280px) {
+  .aboutGPS-opportunities__inner {
+    gap: 15px;
+  }
+  .aboutGPS-opportunities__card {
+    width: 460px;
+  }
+  .aboutGPS-opportunities__card-img img {
+    height: 108px;
+  }
+  .aboutGPS-opportunities__card-title {
+    margin-top: 48px;
+    font-size: 29px;
+    line-height: 38px;
+    letter-spacing: 0.045em;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutGPS-hero__img img {
+    transform: scale(0.8);
+  }
+
+  .aboutGPS-hero__text {
+    font-size: 23px;
+    line-height: 30px;
+  }
+
+  .aboutGPS-opportunities {
+    margin-top: 60px;
+  }
+
+  .aboutGPS-opportunities__title {
+    font-size: 38px;
+  }
+
+  .aboutGPS-opportunities__card {
+    width: 388px;
+    min-height: 414px;
+  }
+
+  .aboutGPS-opportunities__card-descr {
+    font-size: 19px;
+    line-height: 29px;
+  }
+
+  .aboutGPS-opportunities__card-title {
+    font-size: 26px;
+    line-height: 31px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutGPS-hero__img img {
+    margin: 26px auto;
+  }
+
+  .aboutGPS-hero__text {
+    font-size: 19px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutGPS-hero__img img {
+    transform: scale(1);
+    margin: 10px 0;
+  }
+
+  .aboutGPS-opportunities__title {
+    font-size: 24px;
+  }
+
+  .aboutGPS-opportunities__inner {
+    margin-top: 40px;
+  }
+
+  .aboutGPS-opportunities__card-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .aboutGPS-opportunities__card-descr {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 420px) {
+  .aboutGPS-opportunities__card-img img {
+    height: 92px;
+  }
+
+  .aboutGPS-opportunities__card {
+    width: 100%;
+  }
+}
