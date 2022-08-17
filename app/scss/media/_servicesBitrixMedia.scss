@@ -1,0 +1,68 @@
+@media (max-width: 768px) {
+  .servicesBitrix-price__title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .servicesBitrix-price__descr {
+    font-size: 21px;
+  }
+
+  .servicesBitrix-rate p,
+  .servicesBitrix-rate li {
+    font-size: 19px;
+  }
+
+  .servicesBitrix-rate__order-btn {
+    width: 147px;
+    height: 47px;
+  }
+
+  .servicesBitrix-rate__title {
+    font-size: 24px;
+  }
+
+  .servicesBitrix__additional h3 {
+    font-size: 26px;
+    line-height: 42px;
+  }
+}
+
+@media (max-width: 568px) {
+  .servicesBitrix-price__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .servicesBitrix-price__descr {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 25px;
+  }
+
+  .servicesBitrix-rate p,
+  .servicesBitrix-rate li {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .servicesBitrix-rate__order-price {
+    font-size: 12px;
+  }
+
+  .servicesBitrix-rate__order-btn {
+    width: 90px;
+    height: 30px;
+    font-size: 10px;
+
+    img {
+      width: 16px;
+      height: 10px;
+    }
+  }
+
+  .servicesBitrix__additional h3 {
+    font-size: 22px;
+    line-height: 35px;
+  }
+}

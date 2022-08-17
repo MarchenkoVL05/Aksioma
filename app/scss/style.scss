@@ -574,16 +574,62 @@
 }
 
 .servicesBitrix-rate {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
   &__title {
-    width: 450px;
+    display: inline-block;
     margin: 40px auto 65px;
-    padding: 22px 0;
+    padding: 22px;
     font-weight: 700;
     font-size: 34px;
-    text-align: center;
     color: #1f1f1f;
     background-color: rgba(125, 215, 237, 0.47);
     border-radius: 10px;
+    text-align: center;
+  }
+
+  p,
+  li {
+    font-size: 24px;
+    line-height: 35px;
+    color: #252525;
+  }
+
+  ul {
+    margin: 40px 0;
+  }
+
+  &__order {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__order-price {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #252525;
+  }
+}
+
+.servicesBitrix__additional {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+
+  h3 {
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    color: #363839;
+  }
+
+  span {
+    padding: 5px 10px;
+    background-color: rgba(125, 215, 237, 0.47);
+    border-radius: 8px;
   }
 }
 
