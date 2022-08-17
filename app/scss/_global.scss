@@ -48,6 +48,7 @@ input:focus {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   font-family: "Roboto";
   font-size: 16px;
   text-transform: uppercase;
@@ -71,6 +72,9 @@ input:focus {
   &--light-green {
     background-color: #74d84e;
   }
+  &--purple {
+    background-color: #ac73f9;
+  }
 }
 
 .title {
@@ -85,6 +89,9 @@ input:focus {
   }
   &--blue {
     color: #7dd7ed;
+  }
+  &--purple {
+    color: #ac73f9;
   }
 }
 

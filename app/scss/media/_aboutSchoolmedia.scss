@@ -1,0 +1,88 @@
+@media (max-width: 1128px) {
+  .aboutSchool-goal__item-text {
+    font-size: 22px;
+    line-height: 37px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about__hero {
+    padding: 10px 15px 0px 15px;
+  }
+  .aboutSchool-goal__item-text {
+    font-size: 20px;
+    line-height: 33px;
+  }
+
+  .aboutSchool-request {
+    margin-top: 50px;
+  }
+
+  .aboutSchool-goal__descr {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 35px;
+    margin-top: 0px;
+  }
+
+  .aboutSchool-masters {
+    margin-top: 60px;
+  }
+
+  .aboutSchool-masters__item-title {
+    font-size: 26px;
+  }
+
+  .aboutSchool-masters__item-descr {
+    width: 250px;
+    line-height: 26px;
+    font-size: 18px;
+  }
+
+  .aboutSchool-masters__title {
+    font-size: 36px;
+  }
+
+  .aboutSchool-shedule__title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 567px) {
+  .aboutSchool-goal__item {
+    height: 250px;
+  }
+  .aboutSchool-goal__item-text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .aboutSchool-goal__descr {
+    font-size: 13px;
+    line-height: 22px;
+    padding: 20px;
+  }
+
+  .aboutSchool-masters__title {
+    font-size: 26px;
+  }
+
+  .aboutSchool-shedule__date-descr:before {
+    width: 130px;
+  }
+
+  .aboutSchool-shedule__date {
+    width: 100%;
+  }
+
+  .aboutSchool-shedule__title {
+    font-size: 28px;
+  }
+
+  .aboutSchool-shedule__date img {
+    height: 70px;
+  }
+
+  .aboutSchool-shedule__date-inner {
+    margin-left: 15px;
+  }
+}

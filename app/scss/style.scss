@@ -64,7 +64,6 @@
   width: 50px;
   height: 50px;
   margin-top: 20px;
-  background-color: #e5e5e5;
   border-radius: 100%;
   position: relative;
   z-index: 100;
@@ -92,10 +91,15 @@
     width: 150px;
     min-height: 200px;
     padding: 15px 10px;
-    background-color: #e5e5e5;
+    background: linear-gradient(to bottom right, #ffffff, #dedede);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     position: absolute;
     right: 0px;
     top: 70px;
+  }
+
+  &__list {
+    padding: 20px;
   }
 
   &__list-item:not(:first-child) {
@@ -250,7 +254,7 @@
 }
 
 .about__hero {
-  padding: 75px 15px 150px 15px;
+  padding: 75px 15px 0px 15px;
 
   &-container {
     max-width: 1310px;
@@ -708,8 +712,169 @@
   }
 }
 
+// Учебный центр: о направлении
+.aboutSchool-goal {
+  &__item {
+    background-image: url("../images/Group40.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__item-text {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    text-align: center;
+    color: #232323;
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__descr {
+    padding: 35px 60px;
+    margin-top: 70px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 53px;
+    text-transform: capitalize;
+    color: #343434;
+    background-color: rgba(172, 115, 249, 0.24);
+  }
+}
+
+.aboutSchool-masters {
+  margin-top: 100px;
+
+  &__title {
+    text-align: center;
+    color: #2e2e2e;
+  }
+
+  &__items {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  &__item {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    img {
+      position: absolute;
+    }
+  }
+
+  &__item-title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+  }
+
+  &__item-descr {
+    font-size: 26px;
+    line-height: 38px;
+    text-align: center;
+    color: #6f6f6f;
+  }
+}
+
+.aboutSchool-shedule {
+  margin-top: 180px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 38px;
+    text-align: left;
+    letter-spacing: 0.29em;
+    text-transform: uppercase;
+    color: #2e2e2e;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50px;
+      width: 230px;
+      height: 8px;
+      background-color: #ac73f9;
+    }
+  }
+
+  &__dates {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    margin-top: 65px;
+  }
+
+  &__date {
+    width: 540px;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      height: 90px;
+    }
+  }
+
+  &__date-inner {
+    margin-left: 40px;
+  }
+
+  &__date-time {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 38px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #938888;
+  }
+
+  &__date-event {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 38px;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    color: #303030;
+  }
+
+  &__date-descr {
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.035em;
+    color: #615f5f;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: -13px;
+      width: 230px;
+      height: 3px;
+      background-color: #ac73f9;
+    }
+  }
+}
+
 @import "./media/templateAndAbout1Cmedia";
 @import "./media/aboutOutsourceMedia";
 @import "./media/aboutBitrixMedia";
 @import "./media/servicesBitrixMedia";
 @import "./media/aboutGPSmedia";
+@import "./media/aboutSchoolmedia";
