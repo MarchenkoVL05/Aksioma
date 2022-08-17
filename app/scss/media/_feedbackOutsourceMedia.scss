@@ -1,0 +1,111 @@
+@media (max-width: 1128px) {
+  .feedback-partners__item-name {
+    font-size: 37px;
+  }
+
+  .feedback-partners__item-comment {
+    font-size: 24px;
+    line-height: 43px;
+  }
+
+  .feedback-partners__item-author {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .feedback-partners__item {
+    flex-wrap: wrap;
+  }
+
+  .feedback-partners__item-inner {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .feedback-partners__title {
+    font-size: 26px;
+  }
+
+  .feedback-partners__title {
+    margin-top: 50px;
+  }
+
+  .feedback-partners__item-name {
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  .feedback-partners__item-comment {
+    font-size: 19px;
+    line-height: 27px;
+  }
+
+  .feedback-partners__item-author {
+    font-size: 19px;
+  }
+
+  .outsource-results__title {
+    font-size: 26px;
+  }
+
+  .outsource-results__subtitle {
+    font-size: 19px;
+  }
+
+  .outsource-results__name {
+    margin-top: 60px;
+  }
+
+  .outsource-results__name {
+    font-size: 26px;
+    padding: 10px;
+  }
+
+  .outsource-result__state-img {
+    width: 350px;
+    height: 396px;
+  }
+
+  .outsource-result__inner {
+    gap: 15px;
+  }
+
+  .outsource-result__state-descr {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 576px) {
+  .feedback-partners__title {
+    font-size: 24px;
+  }
+
+  .feedback-partners__item-name {
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  .feedback-partners__item-comment {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .feedback-partners__item-author {
+    font-size: 16px;
+  }
+
+  .outsource-results__name {
+    font-size: 18px;
+    padding: 6px;
+  }
+
+  .outsource-result__state-img {
+    width: 220px;
+    height: 280px;
+  }
+
+  .outsource-result__state-descr {
+    font-size: 19px;
+  }
+}

@@ -249,7 +249,8 @@
     position: relative;
     background-image: url("../images//bubble-background.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: right;
   }
 }
 
@@ -872,9 +873,140 @@
   }
 }
 
+.feedback-partners {
+  &__title {
+    margin-top: 90px;
+    text-align: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__item-inner {
+    margin-left: 75px;
+    width: 664px;
+  }
+
+  &__item-name {
+    font-family: "Bad Script";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 52px;
+    letter-spacing: 0.05em;
+  }
+
+  &__item-comment {
+    font-size: 30px;
+    line-height: 52px;
+    margin-top: 33px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: 10px;
+      height: 100%;
+      width: 5px;
+      background-color: rgba(126, 192, 102, 0.29);
+    }
+  }
+
+  &__item-author {
+    margin-top: 15px;
+    font-size: 30px;
+    line-height: 52px;
+    margin-top: 33px;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+.outsource-results {
+  &__title {
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  &__subtitle {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 21px;
+  }
+
+  &__name {
+    background-color: rgba(126, 192, 102, 0.29);
+    border: 3px dashed #474747;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 48px;
+    text-align: center;
+    color: #202020;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 110px;
+    padding: 20px;
+    position: relative;
+    &:before {
+      content: url("../images/Vector8.svg");
+      position: absolute;
+      top: 100px;
+    }
+  }
+}
+
+.outsource-result__inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.outsource-result__state {
+  margin-top: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.outsource-result__state-img {
+  width: 496px;
+  height: 555px;
+  background-color: grey;
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.outsource-result__state-descr {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 48px;
+  margin-top: 42px;
+  position: relative;
+  &:after {
+    content: url("../images/Vector9.svg");
+    position: absolute;
+    top: 30px;
+  }
+}
+
 @import "./media/templateAndAbout1Cmedia";
 @import "./media/aboutOutsourceMedia";
 @import "./media/aboutBitrixMedia";
 @import "./media/servicesBitrixMedia";
 @import "./media/aboutGPSmedia";
 @import "./media/aboutSchoolmedia";
+@import "./media/feedbackOutsourceMedia";
