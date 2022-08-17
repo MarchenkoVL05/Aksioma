@@ -75,6 +75,9 @@ input:focus {
   &--purple {
     background-color: #ac73f9;
   }
+  &--blue-dark {
+    background-color: #557dca;
+  }
 }
 
 .title {
@@ -93,6 +96,9 @@ input:focus {
   &--purple {
     color: #ac73f9;
   }
+  &--blue-dark {
+    color: #557dca;
+  }
 }
 
 .subtitle {
@@ -108,5 +114,8 @@ input:focus {
   &--black {
     font-size: 20px;
     color: #252525;
+  }
+  &--blue-dark {
+    color: #557dca;
   }
 }
