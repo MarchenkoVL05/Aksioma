@@ -1167,6 +1167,201 @@
   }
 }
 
+// Разработка сайтов: о направлении
+.webSteps {
+  margin-top: 70px;
+  &__title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    width: 300px;
+    min-height: 145px;
+  }
+
+  &__item:nth-child(1) {
+    background-image: url("../images/Rectangle33.svg");
+    background-repeat: no-repeat;
+    background-position: 0 60px;
+  }
+  &__item:nth-child(2) {
+    background-image: url("../images/Rectangle34.svg");
+    background-repeat: no-repeat;
+    background-position: 0 60px;
+  }
+  &__item:nth-child(3) {
+    background-image: url("../images/Rectangle35.svg");
+    background-repeat: no-repeat;
+    background-position: 0 60px;
+  }
+
+  &__descr {
+    font-size: 26px;
+    line-height: 37px;
+    text-align: center;
+    color: #313131;
+  }
+}
+
+.webSteps__another-steps {
+  margin-top: 200px;
+}
+
+.webSteps__another-steps-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  line-height: 38px;
+  text-align: center;
+  color: #504f4f;
+  span {
+    font-weight: 700;
+  }
+}
+
+.webSteps__another-steps {
+  .webSteps__item {
+    background-image: url("../images/fgfg.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.webSteps-steps {
+  margin-top: 190px;
+
+  &__item {
+    margin-top: 50px;
+  }
+
+  &__title-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 54px;
+    color: #1d1d1d;
+    background-color: rgba(85, 125, 202, 0.24);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+
+    img {
+      margin-right: 20px;
+    }
+  }
+
+  &__descr-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__descr {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 54px;
+    color: #313131;
+    width: 1000px;
+    margin-top: 40px;
+  }
+}
+
+.webStep {
+  margin-top: 90px;
+
+  &__title-wrapper {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 20px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 38px;
+    color: #504f4f;
+  }
+
+  &__text {
+    font-size: 34px;
+    line-height: 54px;
+    color: #313131;
+    margin-top: 70px;
+  }
+}
+
+.webStep-options {
+  margin-top: 90px;
+
+  &__item {
+    margin-top: 90px;
+  }
+
+  &__item-title {
+    text-align: center;
+  }
+
+  &__item-text {
+    margin-top: 90px;
+    text-align: center;
+    font-size: 34px;
+    line-height: 54px;
+    text-align: center;
+    color: #313131;
+  }
+}
+
+.webStep-options__item:nth-child(1) {
+  background-image: url("../images/Group\ 62.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.webStep-options__item:nth-child(2) {
+  background-image: url("../images/Rectangle30.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+
+.webStep-tarif {
+  margin-top: 90px;
+
+  &__wrapper {
+    max-width: 1190px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+}
+
+.webStep--decor {
+  background-image: url("../images/Rectangle30.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
 @import "./media/templateAndAbout1Cmedia";
 @import "./media/aboutOutsourceMedia";
 @import "./media/aboutBitrixMedia";
@@ -1174,5 +1369,6 @@
 @import "./media/aboutGPSmedia";
 @import "./media/aboutSchoolmedia";
 @import "./media/feedbackOutsourceMedia";
-@import "./media/feedbackWebDevelop";
+@import "./media/feedbackWebDevelopMedia";
 @import "./media/serviceWebDevelopMedia";
+@import "./media/aboutWebDevelopMedia";
