@@ -1029,6 +1029,10 @@
   span {
     background-color: rgba(85, 125, 202, 0.42);
   }
+
+  .webdevelop-proposal--green {
+    background-color: rgba(126, 192, 102, 0.29);
+  }
 }
 
 .feedbackWeb-projects {
@@ -1109,6 +1113,60 @@
   margin-top: 80px;
 }
 
+// Разработка сайтов: услуги
+.serviceWeb__title {
+  text-align: center;
+  background-image: url("../images/Group58.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: 0px;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.serviceWeb {
+  &__container {
+    max-width: 1300px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    margin-top: 50px;
+    display: flex;
+    max-width: 600px;
+  }
+
+  &__item-title {
+    font-size: 30px;
+    line-height: 48px;
+    letter-spacing: 0.2em;
+  }
+
+  &__item-descr {
+    font-size: 22px;
+    margin-top: 10px;
+    line-height: 36px;
+  }
+
+  .serviceWeb__item {
+    position: relative;
+    &::after {
+      content: url("../images/Group55.svg");
+      position: absolute;
+      width: 137px;
+      height: 137px;
+      left: 80px;
+    }
+  }
+}
+
 @import "./media/templateAndAbout1Cmedia";
 @import "./media/aboutOutsourceMedia";
 @import "./media/aboutBitrixMedia";
@@ -1117,3 +1175,4 @@
 @import "./media/aboutSchoolmedia";
 @import "./media/feedbackOutsourceMedia";
 @import "./media/feedbackWebDevelop";
+@import "./media/serviceWebDevelopMedia";
