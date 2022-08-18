@@ -877,6 +877,15 @@
     text-align: center;
   }
 
+  &__item-img {
+    margin-right: 50px;
+  }
+
+  &__item-img:nth-child(odd) {
+    margin-right: 0;
+    margin-left: 50px;
+  }
+
   &__item {
     display: flex;
     align-items: center;
@@ -914,6 +923,13 @@
       height: 100%;
       width: 5px;
       background-color: rgba(126, 192, 102, 0.29);
+    }
+
+    &--grey {
+      &:before {
+        content: "";
+        background-color: rgba(102, 122, 192, 0.29);
+      }
     }
   }
 
@@ -1016,7 +1032,7 @@
 }
 
 .feedbackWeb-projects {
-  margin-top: 70px;
+  margin-top: 120px;
 
   &__title {
     display: flex;
@@ -1068,6 +1084,8 @@
   }
 
   &__item {
+    display: flex;
+    align-items: center;
     width: 242px;
     height: 287px;
     transition: 0.3s all;
@@ -1085,6 +1103,10 @@
     background-color: transparent;
     cursor: pointer;
   }
+}
+
+.feedbackWeb-partners {
+  margin-top: 80px;
 }
 
 @import "./media/templateAndAbout1Cmedia";

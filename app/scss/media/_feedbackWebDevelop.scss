@@ -3,6 +3,21 @@
     font-size: 29px;
     line-height: 49px;
   }
+
+  .feedbackWeb-projects__title-name {
+    font-size: 38px;
+  }
+
+  .feedbackWeb-projects__title-decor {
+    margin-right: 20px;
+    img {
+      transform: scale(0.8);
+    }
+  }
+
+  .slider__content {
+    width: 680px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -17,11 +32,61 @@
     font-size: 20px;
     line-height: 33px;
   }
+
+  .feedbackWeb-projects__title-name {
+    font-size: 30px;
+  }
+
+  .feedbackWeb-projects__title-decor {
+    margin-right: 10px;
+    img {
+      transform: scale(0.8);
+    }
+  }
+
+  .slider__item-wrapper {
+    gap: 20px;
+  }
+
+  .slider__content {
+    width: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .feedbackWeb-projects__title-name {
+    font-size: 24px;
+  }
+
+  .feedbackWeb-projects__title-decor {
+    margin-right: 5px;
+    img {
+      transform: scale(0.7);
+    }
+  }
 }
 
 @media (max-width: 420px) {
   .webdevelop-proposal {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .slider__content {
+    width: 240px;
+  }
+
+  .slider__item {
+    width: 133px;
+    height: 165px;
+  }
+
+  .slider__item img {
+    width: 133px;
+    height: 165px;
+  }
+
+  .slider__item-wrapper {
+    gap: 10px;
   }
 }

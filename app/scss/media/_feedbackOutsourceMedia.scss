@@ -15,12 +15,17 @@
 
 @media (max-width: 992px) {
   .feedback-partners__item {
+    margin-top: 50px;
     flex-wrap: wrap;
+  }
+
+  .feedback-partners__item-name {
+    text-align: center;
   }
 
   .feedback-partners__item-inner {
     margin-left: 0;
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .feedback-partners__title {
@@ -107,5 +112,9 @@
 
   .outsource-result__state-descr {
     font-size: 19px;
+  }
+
+  .feedback-partners__item-img img {
+    transform: scale(0.7);
   }
 }
