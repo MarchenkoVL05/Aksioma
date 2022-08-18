@@ -46,3 +46,51 @@ document.querySelector("body").addEventListener("click", (event) => {
     closeBurger();
   }
 });
+
+// Slider on page (Разработка сайтов: проекты и отзывы)
+const prevBtn = document.querySelector(".slider__btn--prev");
+const nextBtn = document.querySelector(".slider__btn--next");
+
+const sliderContent = document.querySelector(".slider__content");
+const sliderWrapper = document.querySelector(".slider__item-wrapper");
+
+let sliderContentWidth = sliderContent.clientWidth;
+let sliderWrapperWidth = sliderWrapper.clientWidth;
+
+let sliderStop = Math.ceil(sliderWrapperWidth / sliderContentWidth);
+
+let sliderCount = 1;
+
+if (sliderCount === 1) {
+  prevBtn.setAttribute("disabled", "disabled");
+}
+
+prevBtn.addEventListener("click", () => {
+  sliderCount--;
+  nextBtn.removeAttribute("disabled");
+  sliderWrapper.style.transition = ".4s all";
+  sliderWrapper.style.transform += `translateX(${sliderContentWidth}px)`;
+
+  console.log("sliderCount:", sliderCount);
+  console.log("sliderStop:", sliderStop);
+
+  if (sliderCount === 1) {
+    prevBtn.setAttribute("disabled", "disabled");
+  }
+});
+
+nextBtn.addEventListener("click", () => {
+  sliderCount++;
+  prevBtn.removeAttribute("disabled");
+  sliderWrapper.style.transition = ".4s all";
+  sliderWrapper.style.transform += `translateX(${-sliderContentWidth}px)`;
+
+  console.log("sliderCount:", sliderCount);
+  console.log("sliderStop:", sliderStop);
+
+  console.log(sliderContentWidth);
+
+  if (sliderCount == sliderStop) {
+    nextBtn.setAttribute("disabled", "disabled");
+  }
+});
