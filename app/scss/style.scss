@@ -1362,6 +1362,202 @@
   background-size: 40%;
 }
 
+// Видеонаблдение
+.text-bg-block {
+  margin-top: 90px;
+
+  &__item {
+    padding: 70px 38px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+    color: #232323;
+    background-color: rgba(251, 120, 28, 0.31);
+  }
+}
+
+.suggestion {
+  margin-top: 90px;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-top: 65px;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/Group37.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &__item-title {
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+.about-product {
+  min-height: 122px;
+  margin-top: 90px;
+  background-color: rgba(234, 234, 234, 0.56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  color: #1d253c;
+}
+
+.product-details__title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 44px;
+  color: #242424;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: #656565;
+    width: 660px;
+    height: 2px;
+    top: 55px;
+  }
+}
+
+.stars {
+  display: flex;
+}
+
+.about-product__stars {
+  margin: 0 10px 0 20px;
+}
+
+.products-details__subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 44px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.products-details__info {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 44px;
+  text-align: center;
+  margin-top: 15px;
+  span {
+    font-weight: 600;
+  }
+}
+
+.observation-table {
+  margin-top: 30px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 308px 408px 149px 140px 197px 200px;
+}
+
+.observation-table__item {
+  font-size: 27px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  color: #232323;
+  padding: 13px 20px;
+  border: 1px solid #dcdcdc;
+}
+
+.observation-table__item:nth-child(1),
+.observation-table__item:nth-child(2),
+.observation-table__item:nth-child(3),
+.observation-table__item:nth-child(4),
+.observation-table__item:nth-child(5),
+.observation-table__item:nth-child(6) {
+  background-color: #fed5b9;
+}
+
+.observation-table__item:nth-child(31) {
+  grid-column: span 5;
+}
+
+.observation-table__button-container {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1430px;
+}
+
+.observation-table__button {
+  color: white;
+  margin-top: 60px;
+  width: 211px;
+  transition: 0.5s all;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.observation-descr {
+  margin-top: 50px;
+
+  &__title {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 24px;
+    padding: 0 0 15px 0;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #504f4f;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &__text-wrapper {
+    background-color: #eaeaea;
+    min-height: 422px;
+    padding: 35px 5px;
+  }
+
+  &__item-title {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &__item-text {
+    margin-top: 40px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
 @import "./media/templateAndAbout1Cmedia";
 @import "./media/aboutOutsourceMedia";
 @import "./media/aboutBitrixMedia";
@@ -1372,3 +1568,4 @@
 @import "./media/feedbackWebDevelopMedia";
 @import "./media/serviceWebDevelopMedia";
 @import "./media/aboutWebDevelopMedia";
+@import "./media/observationMedia.scss";
