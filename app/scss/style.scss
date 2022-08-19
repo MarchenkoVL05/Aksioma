@@ -1558,6 +1558,196 @@
   }
 }
 
+// Страница IT аутсортинг: услуги
+.serviceOutsource {
+  margin-top: 90px;
+
+  &__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #3d3d3d;
+    margin-top: 90px;
+  }
+
+  &-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-top: 80px;
+  }
+
+  &-steps__item {
+    max-width: 300px;
+    position: relative;
+  }
+}
+
+.serviceOutsource-steps__item:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  border-radius: 100%;
+  background-color: rgba(126, 192, 102, 0.29);
+  right: -12px;
+}
+
+.serviceOutsource-steps__item:nth-child(7)::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 1px dashed #000000;
+  left: -75px;
+  bottom: 5px;
+}
+
+.serviceOutsource-steps__item:nth-child(6)::before {
+  content: "";
+  position: absolute;
+  width: 157px;
+  height: 157px;
+  border-radius: 100%;
+  border: 1px dashed #000000;
+  left: -75px;
+  bottom: 5px;
+}
+
+.serviceOutsource__grid {
+  margin-top: 90px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 380px 165px 165px 380px;
+  grid-template-rows: 84px 84px;
+}
+
+.serviceOutsource__grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 17px;
+}
+.serviceOutsource__grid-item:nth-child(1) {
+  text-align: right;
+  border-right: 4px solid #90b483;
+  border-bottom: 4px solid #90b483;
+}
+.serviceOutsource__grid-item:nth-child(2) {
+  grid-column: span 2;
+  text-align: center;
+  border-bottom: 4px solid #90b483;
+}
+.serviceOutsource__grid-item:nth-child(3) {
+  text-align: left;
+  border-left: 4px solid #90b483;
+  border-bottom: 4px solid #90b483;
+}
+.serviceOutsource__grid-item:nth-child(4) {
+  grid-column: span 2;
+  justify-self: flex-end;
+  border-right: 4px solid #90b483;
+}
+.serviceOutsource__grid-item:nth-child(5) {
+  grid-column: span 2;
+  justify-self: flex-start;
+}
+
+.serviceOutsource-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.serviceOutsource__list {
+  display: none;
+  margin-top: 70px;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 157px;
+    height: 157px;
+    border: 1px dashed #000000;
+    border-radius: 100%;
+    top: -30px;
+    left: 290px;
+  }
+}
+
+.serviceOutsource__list-item:not(:first-child) {
+  margin-top: 40px;
+}
+
+.serviceOutsource-box-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.serviceOutsource__title--box {
+  border: 4px solid #528b3d;
+  max-width: 683px;
+  padding: 26px 38px;
+  font-size: 40px;
+}
+
+.serviceOutsource-steps__list {
+  display: none;
+  margin-top: 60px;
+  position: relative;
+}
+
+.serviceOutsource-steps__list-item:not(:first-child) {
+  margin-top: 25px;
+}
+
+.serviceOutsource-steps__list::before {
+  content: "";
+  position: absolute;
+  width: 256px;
+  height: 256px;
+  background-color: rgba(126, 192, 102, 0.29);
+  border-radius: 100%;
+  right: 10px;
+}
+
+.serviceOutsource-network {
+  &__item {
+    max-width: 798px;
+    height: 100px;
+    margin: 54px auto 0;
+    text-align: center;
+    padding: 15px 37px;
+    background-color: #daedd3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.serviceOutsource-recommendations__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 70px;
+  margin-top: 90px;
+}
+
+.serviceOutsource-recommendations__item {
+  width: 405px;
+  min-height: 270px;
+  padding: 37px 25px;
+  border: 4px dashed rgba(126, 192, 102, 0.29);
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
 @import "./media/templateAndAbout1Cmedia";
 @import "./media/aboutOutsourceMedia";
 @import "./media/aboutBitrixMedia";
@@ -1569,3 +1759,4 @@
 @import "./media/serviceWebDevelopMedia";
 @import "./media/aboutWebDevelopMedia";
 @import "./media/observationMedia.scss";
+@import "./media/serviceOutsourceMedia";

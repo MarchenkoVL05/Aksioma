@@ -1,0 +1,122 @@
+@media (max-width: 1128px) {
+  .serviceOutsource-text {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .serviceOutsource__grid {
+    grid-template-columns: 280px 93px 121px 250px;
+    grid-template-rows: 100px 75px;
+  }
+}
+
+@media (max-width: 992px) {
+  .serviceOutsource__title,
+  .serviceOutsource__title--box {
+    font-size: 36px;
+  }
+
+  .serviceOutsource__grid {
+    margin-top: 60px;
+  }
+
+  .serviceOutsource-recommendations__wrapper {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .serviceOutsource__title {
+    margin-top: 50px;
+  }
+
+  .serviceOutsource__grid {
+    display: none;
+  }
+
+  .serviceOutsource__list {
+    display: block;
+  }
+
+  .serviceOutsource__title--box {
+    padding: 15px 10px;
+  }
+
+  .serviceOutsource-steps {
+    display: none;
+  }
+
+  .serviceOutsource-steps__list {
+    display: block;
+  }
+
+  .serviceOutsource-text {
+    margin: 40px auto 0;
+  }
+}
+
+@media (max-width: 568px) {
+  .serviceOutsource__title,
+  .serviceOutsource__title--box {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .serviceOutsource__list:after {
+    left: 110px;
+  }
+
+  .serviceOutsource-text {
+    font-size: 16px;
+  }
+
+  .serviceOutsource__list-item:not(:first-child) {
+    margin-top: 5px;
+  }
+
+  .serviceOutsource-text {
+    margin: 20px auto 0;
+    padding: 10px 15px;
+  }
+
+  .serviceOutsource-network__item {
+    height: 75px;
+  }
+
+  .serviceOutsource-steps__list-item:not(:first-child) {
+    margin-top: 5px;
+  }
+
+  .serviceOutsource-recommendations__wrapper {
+    gap: 30px;
+  }
+
+  .serviceOutsource-recommendations__item {
+    width: 305px;
+    min-height: 170px;
+  }
+
+  .serviceOutsource-recommendations__wrapper {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .serviceOutsource__title--box {
+    padding: 5px;
+    font-size: 23px;
+  }
+
+  .serviceOutsource-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .serviceOutsource-network__item {
+    height: 50px;
+  }
+
+  .serviceOutsource-recommendations__item {
+    min-height: 120px;
+  }
+}
