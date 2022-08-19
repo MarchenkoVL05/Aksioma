@@ -1748,6 +1748,259 @@
   align-items: center;
 }
 
+// 1С Услуги
+.inform-block {
+  overflow-x: hidden;
+  background: linear-gradient(180deg, rgba(214, 181, 183, 0.28) 75%, rgba(210, 210, 210, 0.28) 100%);
+  &__container {
+    max-width: 1250px;
+  }
+
+  &__wrapper {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ff6973;
+    margin-top: 96px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 44px;
+  }
+
+  &__descr {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    text-align: center;
+    color: #3a3a3a;
+    margin-top: 15px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &:nth-child(1) {
+      position: relative;
+      &:after {
+        content: url("../images/47.svg");
+        position: absolute;
+        top: -40px;
+        transform: scale(0.8);
+        left: 0;
+      }
+    }
+  }
+
+  &__item-text {
+    text-align: center;
+    margin-top: 22px;
+    max-width: 188px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #363839;
+  }
+
+  &__btn {
+    color: black;
+    margin: 70px auto;
+  }
+}
+
+.consultation {
+  background-color: #f3f3f3;
+  min-height: 440px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 23px;
+    color: #f0f0f0;
+    background-color: #363839;
+    padding: 19px;
+  }
+
+  &__info {
+    max-width: 490px;
+    margin-top: 100px;
+  }
+
+  &__descr {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 31px;
+    color: #363839;
+    margin-top: 15px;
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 100px 10px 30px;
+  }
+
+  &__item {
+    max-width: 210px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item-text {
+    margin-top: 25px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #363839;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+.service1C-suggestion {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: 0.075em;
+  color: #363839;
+  .service1C-span1 {
+    background-color: rgba(255, 105, 115, 0.34);
+  }
+  .service1C-span2 {
+    background-color: rgba(156, 148, 205, 0.33);
+  }
+}
+
+.service1C-products {
+  margin-top: 160px;
+  min-height: 900px;
+  background-color: rgba(245, 65, 74, 0.1);
+  padding: 60px 0;
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #202020;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #595959;
+    margin-top: 40px;
+  }
+
+  &__wrapper {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  &__item {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item-descr {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #252525;
+  }
+}
+
+.service1C-head-title {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 72px;
+  text-align: center;
+  color: #202020;
+  margin-top: 50px;
+}
+
+.service1C-head-title__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.service1C-head-title {
+  position: absolute;
+}
+
+.service1C-head-subtitle {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 72px;
+  letter-spacing: 0.045em;
+  color: #ff4e53;
+  margin-top: 40px;
+}
+
+.service1C-text {
+  margin-top: 30px;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.045em;
+  color: #363636;
+
+  &--coursive {
+    font-weight: 600;
+    font-style: italic;
+    background-color: rgba(255, 105, 115, 0.34);
+  }
+}
+
+.service1C-text-bg {
+  margin: 50px;
+  font-size: 34px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.045em;
+  background-color: #ffebed;
+  padding: 12px 10px;
+}
+
 @import "./media/templateAndAbout1Cmedia";
 @import "./media/aboutOutsourceMedia";
 @import "./media/aboutBitrixMedia";
@@ -1760,3 +2013,4 @@
 @import "./media/aboutWebDevelopMedia";
 @import "./media/observationMedia.scss";
 @import "./media/serviceOutsourceMedia";
+@import "./media/service1C";

@@ -1,0 +1,155 @@
+@media (max-width: 1128px) {
+  .consultation__wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px) {
+  .inform-block__item:nth-child(1):after {
+    display: none;
+  }
+
+  .service1C-suggestion {
+    font-size: 28px;
+    line-height: 42px;
+    margin-top: 70px;
+  }
+
+  .service1C-products__title {
+    font-size: 36px;
+  }
+
+  .service1C-products__subtitle {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 28px;
+  }
+
+  .service1C-head-title {
+    font-size: 36px;
+  }
+
+  .service1C-head-title__wrapper img {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 768px) {
+  .inform-block__wrapper {
+    margin-top: 50px;
+  }
+
+  .inform-block__title {
+    font-size: 36px;
+  }
+
+  .inform-block__subtitle {
+    font-size: 16px;
+  }
+
+  .inform-block__descr {
+    font-size: 16px;
+  }
+
+  .consultation__info {
+    margin-top: 10px;
+  }
+
+  .consultation__title {
+    text-align: center;
+  }
+
+  .consultation__descr {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .consultation__contacts {
+    flex-direction: column;
+    margin: 50px 10px 30px;
+    gap: 0;
+  }
+
+  .consultation__item {
+    height: 220px;
+  }
+
+  .consultation__item-text {
+    font-size: 20px;
+  }
+
+  .consultation {
+    padding: 0 0 30px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .inform-block__subtitle {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  .inform-block__title {
+    font-size: 24px;
+  }
+
+  .inform-block__descr {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .inform-block__btn {
+    width: 210px;
+  }
+
+  .consultation__title {
+    font-size: 26px;
+    padding: 13px;
+  }
+
+  .service1C-suggestion {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .service1C-products {
+    padding: 30px;
+  }
+
+  .service1C-products__title {
+    font-size: 26px;
+  }
+
+  .service1C-products__item-descr {
+    font-size: 16px;
+  }
+
+  .service1C-head-title {
+    font-size: 26px;
+    bottom: 35px;
+  }
+
+  .service1C-head-title__wrapper img {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 420px) {
+  .consultation__title {
+    font-size: 18px;
+    padding: 13px;
+  }
+
+  .service1C-suggestion {
+    font-size: 23px;
+    line-height: 26px;
+  }
+  .service1C-products__title {
+    line-height: 35px;
+  }
+
+  .service1C-head-title {
+    font-size: 22px;
+    bottom: 10px;
+  }
+}
