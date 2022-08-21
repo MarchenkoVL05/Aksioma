@@ -81,6 +81,20 @@
   .consultation {
     padding: 0 0 30px 0;
   }
+
+  .service1C-head-subtitle {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .service1C-text {
+    font-size: 20px;
+  }
+
+  .service1C-text-bg {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -132,6 +146,25 @@
   .service1C-head-title__wrapper img {
     transform: scale(0.7);
   }
+
+  .service1C-head-subtitle {
+    font-size: 25px;
+  }
+
+  .service1C-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .service1C-text-bg {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 25px;
+  }
+
+  .service1C-products__wrapper {
+    gap: 25px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -151,5 +184,21 @@
   .service1C-head-title {
     font-size: 22px;
     bottom: 10px;
+  }
+
+  .service1C-head-subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .service1C-text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .service1C-text-bg {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
   }
 }
