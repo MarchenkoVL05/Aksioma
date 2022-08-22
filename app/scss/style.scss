@@ -2314,6 +2314,190 @@
   max-width: 1340px;
 }
 
+// Битрикс 24: продукты
+.productsBitrix-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 48px;
+  color: #353535;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.productsBitrix-subtitle {
+  margin-top: 100px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 48px;
+  color: #3a3a3a;
+  span {
+    font-weight: 600;
+    background-color: rgba(70, 167, 190, 0.3);
+  }
+}
+
+.productsBitrix__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.productsBitrix__item {
+  max-width: 325px;
+  margin-top: 100px;
+}
+
+.productsBitrix {
+  &__container {
+    max-width: 1700px;
+  }
+  &__icon img {
+    margin: 0 auto;
+    max-height: 47px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center;
+    color: #353535;
+    margin-top: 30px;
+  }
+
+  &__descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #4b4b4b;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      border: 1px dashed #7dd7ed;
+      width: 100%;
+      left: 0;
+      top: 45px;
+    }
+  }
+
+  &__users-count {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+    margin-top: 47px;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 25px;
+    text-align: center;
+    color: #5db0c5;
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+    span {
+      font-size: 22px;
+      line-height: 25px;
+      text-align: center;
+      text-decoration-line: line-through;
+      color: #787878;
+    }
+  }
+
+  &__btn {
+    display: block;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 25px;
+    text-align: center;
+    color: #3d3f3f;
+    background-color: rgba(125, 215, 237, 0.16);
+    border-radius: 50px;
+    padding: 18px 48px;
+    margin: 84px auto 0;
+    cursor: pointer;
+  }
+
+  &__amount {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 25px;
+    text-align: center;
+    color: #535656;
+    margin-top: 34px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      border: 1px dashed #7dd7ed;
+      width: 100%;
+      left: 0;
+      top: 100px;
+    }
+  }
+
+  &__coop {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 25px;
+    color: #5f5f5f;
+    display: flex;
+    gap: 10px;
+    margin-top: 138px;
+  }
+
+  &__coop-list {
+    list-style-type: none;
+  }
+
+  &__coop-list-item {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 46px;
+    color: #797777;
+  }
+
+  &__feature {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 25px;
+    color: #5f5f5f;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 32px;
+  }
+}
+
+.productsBitrix__about {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  color: #464646;
+  margin-top: 80px;
+  a {
+    background: rgba(70, 167, 190, 0.3);
+    text-decoration: underline;
+  }
+}
+
+.productsBitrix__feature--mb354 {
+  margin-top: 354px;
+}
+.productsBitrix__feature--mb240 {
+  margin-top: 240px;
+}
+.productsBitrix__feature--mb69 {
+  margin-top: 69px;
+}
+
 @import "./media/templateAndAbout1Cmedia";
 @import "./media/aboutOutsourceMedia";
 @import "./media/aboutBitrixMedia";
@@ -2330,3 +2514,4 @@
 @import "./media/insideGPSmedia";
 @import "./media/insideBitrixMedia.scss";
 @import "./media/serviceGPS";
+@import "./media/productsBitrix24Media";
