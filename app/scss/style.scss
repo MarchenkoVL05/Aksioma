@@ -37,6 +37,7 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    list-style: none;
   }
 
   &__list-item {
@@ -2232,6 +2233,87 @@
   margin-top: 100px;
 }
 
+// GPS Мониторинг: услуги
+.serviceGPS__title {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.serviceGPS__card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  margin-top: 80px;
+}
+
+.serviceGPS__card {
+  width: 407px;
+  height: 578px;
+  padding: 20px 5px 30px;
+  border: 2px solid #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    color: #3b3b3b;
+  }
+
+  &-descr {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #696767;
+  }
+
+  &-btn {
+    background: #c4ffae;
+    border: 1px solid #595757;
+    border-radius: 15px;
+    width: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    color: #000000;
+    padding: 7px 10px;
+    height: 40px;
+    cursor: pointer;
+    img {
+      transform: scale(0.7);
+    }
+  }
+}
+
+.serviceGPS__card-price-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.serviceGPS__card-price {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: right;
+  color: #404040;
+}
+
+.serviceGPS__card-container {
+  max-width: 1340px;
+}
+
 @import "./media/templateAndAbout1Cmedia";
 @import "./media/aboutOutsourceMedia";
 @import "./media/aboutBitrixMedia";
@@ -2247,3 +2329,4 @@
 @import "./media/service1Cmedia";
 @import "./media/insideGPSmedia";
 @import "./media/insideBitrixMedia.scss";
+@import "./media/serviceGPS";

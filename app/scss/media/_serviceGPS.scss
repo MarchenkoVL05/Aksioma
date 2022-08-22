@@ -1,0 +1,46 @@
+@media (max-width: 992px) {
+  .serviceGPS__title {
+    font-size: 36px;
+    margin-top: 70px;
+  }
+
+  .serviceGPS__card-wrapper {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .serviceGPS__card {
+    width: 334px;
+    height: 490px;
+  }
+
+  .serviceGPS__card-title {
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  .serviceGPS__title {
+    font-size: 24px;
+  }
+
+  .serviceGPS__card-descr {
+    font-size: 14px;
+  }
+
+  .serviceGPS__card-price {
+    font-size: 16px;
+  }
+
+  .serviceGPS__card-btn {
+    width: 140px;
+    font-size: 16px;
+    padding: 3px;
+    justify-content: center;
+    gap: 5px;
+    height: 30px;
+    img {
+      transform: scale(0.5);
+    }
+  }
+}
