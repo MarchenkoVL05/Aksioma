@@ -1,0 +1,139 @@
+@media (max-width: 1095px) {
+  .insideBlock__list-item {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .insideBlock__title {
+    font-size: 26px;
+  }
+
+  .insideBlock__list-wrapper {
+    justify-content: center;
+  }
+
+  .insideBlock__list-item {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .insideBlock__list-img {
+    order: -1;
+    margin-top: 45px;
+  }
+
+  .insideBlock__list-img::before {
+    display: none;
+  }
+
+  .insideBlock .container {
+    background-image: none;
+  }
+
+  .insideBlock__list-img {
+    img {
+      transform: scale(0.8);
+    }
+  }
+  .insideBlock__text {
+    font-size: 22px;
+  }
+
+  .insideBlock__list-box {
+    padding: 36px 46px 40px 53px;
+  }
+
+  .insideBlock__bordered-box {
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  .insideBlock-info {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 590px) {
+  .insideBlock__list-wrapper {
+    justify-content: flex-start;
+  }
+
+  .insideBlock__list-item {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .insideBlock__list-img {
+    margin: 0 auto;
+  }
+
+  .insideBlock__list-item:nth-child(even) {
+    position: relative;
+    left: 25px;
+  }
+
+  .insideBlock__list-img {
+    img {
+      transform: scale(0.6);
+    }
+  }
+
+  .insideBlock__title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .insideBlock__text {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .insideBlock__list-box {
+    padding: 21px 13px 31px 6px;
+  }
+
+  .insideBlock__list--box {
+    margin-top: 20px;
+  }
+
+  .insideBlock__list-box-decor img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .insideBlock__bordered-box-wrapper {
+    gap: 25px;
+  }
+
+  .insideBlock__title-wrapper {
+    margin-top: 50px;
+  }
+
+  .insideBlock__bordered-box {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 12px;
+  }
+
+  .insideBlock-info {
+    font-size: 16px;
+    line-height: 22px;
+    height: 70px;
+  }
+
+  .insideBlock__title-wrapper img {
+    transform: scale(0.5);
+  }
+
+  .insideBlock__title-wrapper {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 420px) {
+  .insideBlock-info {
+    font-size: 12px;
+    padding: 17px 5px;
+  }
+}
