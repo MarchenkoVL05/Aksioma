@@ -2182,6 +2182,56 @@
   padding: 15px 37px;
 }
 
+.insideBitrix__title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.insideBitrix__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 70px;
+}
+
+.insideBitrix__card {
+  width: 358px;
+  min-height: 421px;
+  border: 4px dashed #7dd7ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px 5px;
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 34px;
+    text-align: center;
+    color: #414141;
+  }
+
+  &-descr {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center;
+    color: #5e6167;
+  }
+}
+
+.insideBitrix__btn {
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
 @import "./media/templateAndAbout1Cmedia";
 @import "./media/aboutOutsourceMedia";
 @import "./media/aboutBitrixMedia";
@@ -2196,3 +2246,4 @@
 @import "./media/serviceOutsourceMedia";
 @import "./media/service1Cmedia";
 @import "./media/insideGPSmedia";
+@import "./media/insideBitrixMedia.scss";

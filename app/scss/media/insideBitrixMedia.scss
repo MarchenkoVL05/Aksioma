@@ -1,0 +1,19 @@
+@media (max-width: 1128px) {
+  .about__hero-inner--mt {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .insideBitrix__card {
+    min-height: 350px;
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  .insideBitrix__card-descr {
+    line-height: 30px;
+  }
+}
