@@ -4,6 +4,9 @@ const burgerSpanTop = document.querySelector(".burger__span--top");
 const burgerSpanBottom = document.querySelector(".burger__span--bottom");
 const burgerPopup = document.querySelector(".burger__popup");
 
+let header = document.querySelector(".header");
+let headerHeight = header.offsetHeight;
+
 let menuOpened = false;
 
 function openBurger() {
@@ -16,6 +19,8 @@ function openBurger() {
   burgerSpanBottom.style.top = "25px";
 
   burgerPopup.style.display = "block";
+
+  burgerPopup.style.top = `${headerHeight}px`;
 
   menuOpened = true;
 }
@@ -44,6 +49,21 @@ burger.addEventListener("click", () => {
 document.querySelector("body").addEventListener("click", (event) => {
   if (menuOpened && !event.target.classList.contains("burger__popup") && !event.target.classList.contains("burger")) {
     closeBurger();
+  }
+});
+
+// Появление иконски закрытия меню при скролле
+let menuPopupClose = document.querySelector(".burger__list-close");
+
+window.addEventListener("scroll", () => {
+  menuPopupClose.style.transition = "0.5s all";
+  menuPopupClose.style.opacity = "100";
+
+  burgerPopup.style.top = "0";
+
+  if (window.pageYOffset === 0) {
+    menuPopupClose.style.opacity = "0";
+    burgerPopup.style.top = `${headerHeight}px`;
   }
 });
 
@@ -136,8 +156,6 @@ if (navigationListClose) {
       let navigationContent = navigationItem.querySelector(".navigation__item-content");
       let navigationList = navigationItem.querySelector(".navigation__item-list");
 
-      let shift = navigationContent.offsetWidth + 20;
-
       navigationContent.style.transition = ".3s all";
       navigationList.style.transition = ".3s all";
 
@@ -146,3 +164,5 @@ if (navigationListClose) {
     });
   });
 }
+
+// Открыть панель навигации на планшете/ мобиле
