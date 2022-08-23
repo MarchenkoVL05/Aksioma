@@ -54,43 +54,95 @@ const nextBtn = document.querySelector(".slider__btn--next");
 const sliderContent = document.querySelector(".slider__content");
 const sliderWrapper = document.querySelector(".slider__item-wrapper");
 
-let sliderContentWidth = sliderContent.clientWidth;
-let sliderWrapperWidth = sliderWrapper.clientWidth;
+let sliderContentWidth;
+let sliderWrapperWidth;
+
+if (sliderContent) {
+  sliderContentWidth = sliderContent.clientWidth;
+}
+if (sliderWrapper) {
+  sliderWrapperWidth = sliderWrapper.clientWidth;
+}
 
 let sliderStop = Math.ceil(sliderWrapperWidth / sliderContentWidth);
 
 let sliderCount = 1;
 
-if (sliderCount === 1) {
+if (sliderCount === 1 && prevBtn) {
   prevBtn.setAttribute("disabled", "disabled");
 }
 
-prevBtn.addEventListener("click", () => {
-  sliderCount--;
-  nextBtn.removeAttribute("disabled");
-  sliderWrapper.style.transition = ".4s all";
-  sliderWrapper.style.transform += `translateX(${sliderContentWidth}px)`;
+if (prevBtn) {
+  prevBtn.addEventListener("click", () => {
+    sliderCount--;
+    nextBtn.removeAttribute("disabled");
+    sliderWrapper.style.transition = ".4s all";
+    sliderWrapper.style.transform += `translateX(${sliderContentWidth}px)`;
 
-  console.log("sliderCount:", sliderCount);
-  console.log("sliderStop:", sliderStop);
+    console.log("sliderCount:", sliderCount);
+    console.log("sliderStop:", sliderStop);
 
-  if (sliderCount === 1) {
-    prevBtn.setAttribute("disabled", "disabled");
-  }
-});
+    if (sliderCount === 1 && prevBtn) {
+      prevBtn.setAttribute("disabled", "disabled");
+    }
+  });
+}
 
-nextBtn.addEventListener("click", () => {
-  sliderCount++;
-  prevBtn.removeAttribute("disabled");
-  sliderWrapper.style.transition = ".4s all";
-  sliderWrapper.style.transform += `translateX(${-sliderContentWidth}px)`;
+if (nextBtn) {
+  nextBtn.addEventListener("click", () => {
+    sliderCount++;
+    prevBtn.removeAttribute("disabled");
+    sliderWrapper.style.transition = ".4s all";
+    sliderWrapper.style.transform += `translateX(${-sliderContentWidth}px)`;
 
-  console.log("sliderCount:", sliderCount);
-  console.log("sliderStop:", sliderStop);
+    console.log("sliderCount:", sliderCount);
+    console.log("sliderStop:", sliderStop);
 
-  console.log(sliderContentWidth);
+    console.log(sliderContentWidth);
 
-  if (sliderCount == sliderStop) {
-    nextBtn.setAttribute("disabled", "disabled");
-  }
-});
+    if (sliderCount == sliderStop && nextBtn) {
+      nextBtn.setAttribute("disabled", "disabled");
+    }
+  });
+}
+
+// Панель навигации
+let navigationBtn = document.querySelectorAll(".navigation__btn");
+
+if (navigationBtn) {
+  navigationBtn.forEach((btn, btnIndex) => {
+    btn.addEventListener("click", () => {
+      let navigationItem = btn.closest(".navigation__item");
+      let navigationContent = navigationItem.querySelector(".navigation__item-content");
+      let navigationList = navigationItem.querySelector(".navigation__item-list");
+
+      let shift = navigationContent.offsetWidth + 20;
+
+      navigationContent.style.transition = ".3s all";
+      navigationList.style.transition = ".3s all";
+
+      navigationContent.style.transform = `TranslateX(${-shift}px)`;
+      navigationList.style.transform = `TranslateX(${-shift}px)`;
+    });
+  });
+}
+
+let navigationListClose = document.querySelectorAll(".navigation__item-list img");
+
+if (navigationListClose) {
+  navigationListClose.forEach((close) => {
+    close.addEventListener("click", () => {
+      let navigationItem = close.closest(".navigation__item");
+      let navigationContent = navigationItem.querySelector(".navigation__item-content");
+      let navigationList = navigationItem.querySelector(".navigation__item-list");
+
+      let shift = navigationContent.offsetWidth + 20;
+
+      navigationContent.style.transition = ".3s all";
+      navigationList.style.transition = ".3s all";
+
+      navigationContent.style.transform = `TranslateX(${0}px)`;
+      navigationList.style.transform = `TranslateX(${0}px)`;
+    });
+  });
+}
