@@ -166,3 +166,16 @@ if (navigationListClose) {
 }
 
 // Открыть панель навигации на планшете/ мобиле
+const navigPanel = document.querySelector(".navigPanel");
+const accordion = document.querySelector(".accordion");
+const navigClose = document.querySelector(".navigPanel__close");
+
+const openedNavig = false;
+
+accordion.addEventListener("click", () => {
+  navigPanel.style.display = "block";
+});
+
+navigClose.addEventListener("click", () => {
+  navigPanel.style.display = "none";
+});

@@ -3045,6 +3045,68 @@
   }
 }
 
+.navigPanel {
+  position: fixed;
+  top: 0;
+  z-index: 101;
+  background-color: rgb(214, 214, 214);
+  height: 100vh;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 120px;
+    padding: 5px 10px;
+    background-color: rgb(214, 214, 214);
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    overflow: hidden;
+  }
+
+  &__item-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #464646;
+  }
+
+  &__item-descr {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: #464646;
+    margin-top: 10px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: transparent;
+    margin-top: 10px;
+
+    &:hover {
+      gap: 8px;
+    }
+  }
+}
+
+.navigPanel {
+  display: none;
+}
+
+.navigPanel__close {
+  margin-right: 20px;
+  margin-top: 10px;
+  z-index: 3;
+  text-decoration: underline;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 @import "./media/templateAndAbout1Cmedia";
 @import "./media/aboutOutsourceMedia";
 @import "./media/aboutBitrixMedia";
