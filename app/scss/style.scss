@@ -99,6 +99,8 @@
     top: 70px;
     position: fixed;
     transition: 0.5s all;
+    cursor: default;
+    overflow-y: auto;
   }
 
   &__list {
@@ -3019,48 +3021,38 @@
   }
 }
 
-.accordion {
-  background-color: transparent;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  display: none;
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  animation-duration: 0.5s;
-  animation-name: breathe;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes breathe {
-  from {
-    width: 50px;
-    height: 50px;
-  }
-  to {
-    width: 60px;
-    height: 60px;
-  }
-}
-
 .navigPanel {
-  position: fixed;
-  top: 0;
-  z-index: 101;
-  background-color: rgb(214, 214, 214);
-  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+
   &__item {
+    padding: 3px;
+    max-width: 280px;
+    height: 103px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
-    height: 120px;
-    padding: 5px 10px;
-    background-color: rgb(214, 214, 214);
-    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    margin-top: 25px;
     overflow: hidden;
+    transition: 0.5s all;
+    cursor: default;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #535656;
+      top: 0;
+    }
+  }
+
+  &__item:nth-child(1) {
+    height: 130px;
   }
 
   &__item-title {
@@ -3075,36 +3067,158 @@
     font-size: 12px;
     line-height: 19px;
     color: #464646;
-    margin-top: 10px;
+    margin-top: 6px;
   }
 
   &__btn {
+    margin-top: 14px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 5px;
+    align-items: center;
+    gap: 7px;
     background-color: transparent;
-    margin-top: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #464646;
+    cursor: pointer;
+  }
 
-    &:hover {
-      gap: 8px;
-    }
+  &__list {
+    margin-top: 15px;
+  }
+
+  &__list-item {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
   }
 }
 
-.navigPanel {
-  display: none;
+.navigPanel__item-title:nth-child(1) {
+  font-size: 17px;
 }
 
-.navigPanel__close {
-  margin-right: 20px;
-  margin-top: 10px;
-  z-index: 3;
-  text-decoration: underline;
-  display: flex;
-  justify-content: flex-end;
-  font-size: 20px;
-  cursor: pointer;
+// navigatePanel цвета списков
+.navigPanel__item:nth-child(1) {
+  .navigPanel__list a {
+    color: #56973e;
+  }
+}
+
+.navigPanel__item:nth-child(2) {
+  .navigPanel__list a {
+    color: #dd5b5b;
+  }
+}
+
+.navigPanel__item:nth-child(3) {
+  .navigPanel__list a {
+    color: #73ca54;
+  }
+}
+
+.navigPanel__item:nth-child(4) {
+  .navigPanel__list a {
+    color: #557dca;
+  }
+}
+
+.navigPanel__item:nth-child(5) {
+  .navigPanel__list a {
+    color: #ac73f9;
+  }
+}
+
+.navigPanel__item:nth-child(6) {
+  .navigPanel__list a {
+    color: #1888a3;
+  }
+}
+
+.navigPanel__item:nth-child(7) {
+  .navigPanel__list a {
+    color: #fb781c;
+  }
+}
+
+// navigPanel Цвета
+.navigPanel__item:nth-child(1) {
+  .navigPanel__item-title {
+    color: #56973e;
+  }
+  .navigPanel__btn {
+    color: #56973e;
+    img {
+      filter: invert(49%) sepia(21%) saturate(1103%) hue-rotate(59deg) brightness(100%) contrast(92%);
+    }
+  }
+}
+.navigPanel__item:nth-child(2) {
+  .navigPanel__item-title {
+    color: #dd5b5b;
+  }
+  .navigPanel__btn {
+    color: #dd5b5b;
+    img {
+      filter: invert(49%) sepia(19%) saturate(1841%) hue-rotate(314deg) brightness(94%) contrast(83%);
+    }
+  }
+}
+.navigPanel__item:nth-child(3) {
+  .navigPanel__item-title {
+    color: #73ca54;
+  }
+  .navigPanel__btn {
+    color: #73ca54;
+    img {
+      filter: invert(76%) sepia(20%) saturate(1139%) hue-rotate(57deg) brightness(90%) contrast(90%);
+    }
+  }
+}
+.navigPanel__item:nth-child(4) {
+  .navigPanel__item-title {
+    color: #557dca;
+  }
+  .navigPanel__btn {
+    color: #557dca;
+    img {
+      filter: invert(63%) sepia(61%) saturate(4098%) hue-rotate(198deg) brightness(84%) contrast(86%);
+    }
+  }
+}
+.navigPanel__item:nth-child(5) {
+  .navigPanel__item-title {
+    color: #ac73f9;
+  }
+  .navigPanel__btn {
+    color: #ac73f9;
+    img {
+      filter: invert(58%) sepia(21%) saturate(6999%) hue-rotate(227deg) brightness(98%) contrast(100%);
+    }
+  }
+}
+.navigPanel__item:nth-child(6) {
+  .navigPanel__item-title {
+    color: #1888a3;
+  }
+  .navigPanel__btn {
+    color: #1888a3;
+    img {
+      filter: invert(42%) sepia(91%) saturate(381%) hue-rotate(144deg) brightness(88%) contrast(100%);
+    }
+  }
+}
+.navigPanel__item:nth-child(7) {
+  .navigPanel__item-title {
+    color: #fb781c;
+  }
+  .navigPanel__btn {
+    color: #fb781c;
+    img {
+      filter: invert(51%) sepia(29%) saturate(1698%) hue-rotate(346deg) brightness(102%) contrast(97%);
+    }
+  }
 }
 
 @import "./media/templateAndAbout1Cmedia";

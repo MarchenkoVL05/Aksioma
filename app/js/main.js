@@ -20,7 +20,9 @@ function openBurger() {
 
   burgerPopup.style.display = "block";
 
-  burgerPopup.style.top = `${headerHeight}px`;
+  if (window.pageYOffset === 0) {
+    burgerPopup.style.top = `${headerHeight}px`;
+  }
 
   menuOpened = true;
 }
@@ -37,8 +39,14 @@ function closeBurger() {
   menuOpened = false;
 }
 
-burger.addEventListener("click", () => {
-  if (menuOpened) {
+burger.addEventListener("click", (event) => {
+  event.stopImmediatePropagation();
+  event.preventDefault();
+  if (
+    (menuOpened && event.target.classList.contains("burger")) ||
+    event.target.classList.contains("burger__span") ||
+    event.target.classList.contains("burger__list-close-img")
+  ) {
     closeBurger();
   } else {
     openBurger();
@@ -46,11 +54,11 @@ burger.addEventListener("click", () => {
 });
 
 //Закрывать бургер меню по клику вне
-document.querySelector("body").addEventListener("click", (event) => {
-  if (menuOpened && !event.target.classList.contains("burger__popup") && !event.target.classList.contains("burger")) {
-    closeBurger();
-  }
-});
+// document.querySelector("body").addEventListener("click", (event) => {
+//   if (menuOpened && !event.target.classList.contains(".burger__popup") && !event.target.classList.contains(".burger")) {
+//     closeBurger();
+//   }
+// });
 
 // Появление иконски закрытия меню при скролле
 let menuPopupClose = document.querySelector(".burger__list-close");
@@ -58,11 +66,13 @@ let menuPopupClose = document.querySelector(".burger__list-close");
 window.addEventListener("scroll", () => {
   menuPopupClose.style.transition = "0.5s all";
   menuPopupClose.style.opacity = "100";
+  menuPopupClose.style.cursor = "pointer";
 
   burgerPopup.style.top = "0";
 
   if (window.pageYOffset === 0) {
     menuPopupClose.style.opacity = "0";
+    menuPopupClose.style.cursor = "default";
     burgerPopup.style.top = `${headerHeight}px`;
   }
 });
@@ -166,16 +176,27 @@ if (navigationListClose) {
 }
 
 // Открыть панель навигации на планшете/ мобиле
-const navigPanel = document.querySelector(".navigPanel");
-const accordion = document.querySelector(".accordion");
-const navigClose = document.querySelector(".navigPanel__close");
+let navigPanelBtn = document.querySelectorAll(".navigPanel__btn");
 
-const openedNavig = false;
-
-accordion.addEventListener("click", () => {
-  navigPanel.style.display = "block";
+navigPanelBtn.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+  });
 });
 
-navigClose.addEventListener("click", () => {
-  navigPanel.style.display = "none";
+// Раскрывать список в navigatePanel
+let navigPanelItem = document.querySelectorAll(".navigPanel__item");
+let navigatePanelBtn = document.querySelectorAll(".navigPanel__btn");
+
+navigatePanelBtn.forEach((btn, btnIndex) => {
+  btn.addEventListener("click", () => {
+    navigPanelItem.forEach((item, itemIndex) => {
+      if (itemIndex === btnIndex) {
+        console.log(itemIndex);
+        item.style.transition = "0.5s all";
+        item.style.minHeight = "0";
+        item.style.height = "auto";
+      }
+    });
+  });
 });
