@@ -36,6 +36,7 @@
 
   .webStep-tarif__item {
     transform: scale(0.7);
+    max-height: 350px;
   }
 }
 
@@ -165,5 +166,9 @@
 
   .webSteps__another-steps .webSteps__item {
     background-size: 75%;
+  }
+
+  .webStep-tarif__item {
+    max-height: 280px;
   }
 }
