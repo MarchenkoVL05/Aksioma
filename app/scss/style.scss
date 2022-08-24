@@ -3227,6 +3227,37 @@
   }
 }
 
+.container__openPanel {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.openPanel {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 5px;
+  }
+}
+
+.openPanel__btn {
+  background-color: transparent;
+  font-size: 18px;
+  margin-top: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.navigation__wrapper--inside {
+  display: none;
+  min-height: 670px;
+}
+
 @import "./media/templateAndAbout1Cmedia";
 @import "./media/aboutOutsourceMedia";
 @import "./media/aboutBitrixMedia";

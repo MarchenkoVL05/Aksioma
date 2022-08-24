@@ -200,3 +200,21 @@ navigatePanelBtn.forEach((btn, btnIndex) => {
     });
   });
 });
+
+// Открыть панель навигации на внутренних страницах
+let navigPanelInside = document.querySelector(".navigation__wrapper--inside");
+let openPanel = document.querySelector(".openPanel__btn");
+
+let openedPanel = false;
+
+openPanel.addEventListener("click", () => {
+  if (!openedPanel) {
+    navigPanelInside.style.display = "block";
+    openPanel.innerHTML = "закрыть";
+    openedPanel = true;
+  } else {
+    navigPanelInside.style.display = "none";
+    openPanel.textContent = "меню";
+    openedPanel = false;
+  }
+});
