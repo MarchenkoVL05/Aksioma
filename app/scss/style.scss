@@ -224,8 +224,9 @@
 
   &__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 100px;
   }
 
   &__form {
@@ -1902,6 +1903,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    img {
+      height: 106px;
+    }
   }
 
   &__item-text {

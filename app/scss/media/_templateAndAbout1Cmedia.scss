@@ -66,6 +66,7 @@
 
   .request__wrapper {
     flex-direction: column;
+    gap: 5px;
   }
 
   .request__info {
@@ -150,6 +151,10 @@
 
   .request__title {
     text-align: right;
+  }
+
+  .request__wrapper {
+    gap: 10px;
   }
 
   .about__hero {
