@@ -38,6 +38,10 @@
     transform: scale(0.7);
     max-height: 350px;
   }
+
+  .plus {
+    display: none;
+  }
 }
 
 @media (max-width: 870px) {
@@ -61,6 +65,14 @@
 
   .webSteps__another-steps-title img {
     transform: scale(0.7);
+  }
+
+  .webStep__title-wrapper img {
+    transform: scale(0.7);
+  }
+
+  .webSteps-steps {
+    margin-top: 110px;
   }
 
   .webSteps__wrapper {
@@ -120,6 +132,10 @@
     }
   }
 
+  .webSteps-steps {
+    margin-top: 30px;
+  }
+
   .webSteps-steps__descr {
     font-size: 16px;
     line-height: 33px;
@@ -170,5 +186,10 @@
 
   .webStep-tarif__item {
     max-height: 280px;
+  }
+
+  .webStep__title {
+    font-size: 20px;
+    line-height: 27px;
   }
 }
